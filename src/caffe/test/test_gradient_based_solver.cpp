@@ -1095,7 +1095,7 @@ TYPED_TEST(AdaDeltaSolverTest, TestLeastSquaresUpdateWithMomentumMultiIter) {
   const Dtype kLearningRate = 0.0;
   const Dtype kWeightDecay = 0.0;
   const Dtype kMomentum = 0.95;
-  const int kNumIters = 500;
+  const int kNumIters = 4;
   for (int i = 0; i <= kNumIters; ++i) {
       this->TestLeastSquaresUpdate(kLearningRate, kWeightDecay, kMomentum, i);
   }
@@ -1106,7 +1106,7 @@ TYPED_TEST(AdaDeltaSolverTest, TestAdaDeltaLeastSquaresUpdateWithEverything) {
   const Dtype kLearningRate = 0.0;
   const Dtype kWeightDecay = 0.1;
   const Dtype kMomentum = 0.95;
-  const int kNumIters = 500;
+  const int kNumIters = 4;
   for (int i = 0; i <= kNumIters; ++i) {
       this->TestLeastSquaresUpdate(kLearningRate, kWeightDecay, kMomentum, i);
   }
